@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Teko", sans-serif, 'Poppins';
+  background: #ffffff;
+  letter-spacing: 0.5px;
+}
+
+.navbar {
+  width: 100%;
+  background: #009688;
+  padding: 12px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  font-family: 'Poppins', sans-serif;
+}
+
+.nav-content {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 110px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  font-family: "Teko", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.hero-section {
+  margin-top: 120px;
+  text-align: center;
+  width: 100%;
+}
+
+.hero-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 42px;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.hero-title span {
+  color: #009688;
+  font-weight: 700;
+}
+
+.hero-car {
+  width: 100%;
+  display: flex;
+  margin: auto;
+}
+
+.hero-subtext {
+  margin-top: 30px;
+  font-size: 22px;
+  color: #000000;
+  font-family: "Instrument Sans", sans-serif;
+  font-weight: 700;
+}
+
+.btn-primary {
+  margin-top: 25px;
+  display: inline-block;
+  background: #004aad;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 17px;
+  text-decoration: none;
+  font-family: "Instrument Sans", sans-serif;
+}
+
+.fixed-icons {
+  position: fixed;
+  bottom: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  z-index: 9999;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.25);
+}
+
+.icon-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
