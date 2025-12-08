@@ -10,6 +10,7 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <script src="./public/script.js"></script>
 </head>
 
 <body>
@@ -21,11 +22,11 @@
 
             <ul class="nav-links">
                 <li><a href="./loja.html">Nossa Loja</a></li>
+                <li><a href="./servico.html">Serviço</a></li>
                 <li><a href="./sobre.html">Sobre Nós</a></li>
                 <li><a
                         href="https://www.google.com/search?sca_esv=7c6910cd552a3b71&sxsrf=AE3TifPH8Hy27dKWTjpU82q7fTJbHyYHrA:1765133745892&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E_nzMxcLukbWcE-Wt0YnK2WyZdlQxdf2OGV9CH7XYsTl-W9qLxy_aIQGoo4bYvybRR-N6PzgMxEhz2fmGSabC-eeZ85Zo8OS5-8SfJBU9CpzETyckA%3D%3D&q=Pitinin+Auto-Mec%C3%A2nica+Coment%C3%A1rios&sa=X&ved=2ahUKEwjvup7Pk6yRAxUxppUCHZYIKegQ0bkNegQIHhAD&biw=1366&bih=607&dpr=1">Avaliação</a>
                 </li>
-                <li><a href="./servico.html">Serviço</a></li>
                 <li><a href="./contato.html">Contato</a></li>
             </ul>
         </div>
@@ -36,7 +37,14 @@
             BEM VINDO A <span>PITININ AUTOPEÇAS & SERVIÇOS</span>
         </h1>
 
-        <img src="./public/imagens/mercedes/mercedes_pt2_ajustada.jpg" class="hero-car" alt="Carro Esportivo">
+        <div class="hero-carousel">
+            <div class="carousel-track">
+                <img src="./public/imagens/porsche/porsche.jpg" alt="Porsche">
+                <img src="./public/imagens/mustang/mustang.jpg" alt="Mustang">
+                <img src="./public/imagens/mercedes/mercedes_pt1.jpg" alt="Mercedes">
+                <img src="./public/imagens/bmw/bmw_preta.jpg" alt="BMW">
+            </div>
+        </div>
 
         <p class="hero-subtext">
             Tradição, tecnologia e transparência há mais de 20 anos na Mooca
@@ -44,19 +52,100 @@
 
         <a href="./sobre.html" class="btn-primary">SAIBA MAIS</a>
     </section>
+    <section class="servico-cta-section">
+        <div class="div-azul">
+            <div class="servico-cta-content">
+                <h2>A MANUTENÇÃO QUE SEU CARRO MERECE</h2>
+                <p>
+                    Um ecossistema completo que conecta pessoas, peças e performance. A Pitinin evoluiu para
+                    ser um hub de soluções automotivas — unindo tecnologia, estoque inteligente, serviços
+                    rápidos e relacionamento humano.
+                </p>
+
+                <a href="./contato.html" class="btn-outline">AGENDE SEU ATENDIMENTO</a>
+            </div>
+        </div>
+        <div class="car-track">
+            <img src="./public/imagens/carro_icone.png" class="car-walk" alt="Carrinho">
+        </div>
+    </section>
+
+    <section class="pitinin-cta">
+        <img src="./public/imagens/ferramentas/ferramentas.jpg" alt="Fachada Pitinin Auto Peças" class="cta-image">
+
+        <div class="cta-overlay"></div>
+
+        <div class="cta-content">
+            <h1 class="cta-title">VENHA PARA A PITININ AUTO PEÇAS!</h1>
+
+            <div class="cta-features">
+                <div class="cta-feature-item">
+                    <img src="./public/imagens/wifi.png" alt="">
+                    <h3>Ambiente Acolhedor</h3>
+                    <p>Espaço limpo e confortável com café e Wi-Fi</p>
+                </div>
+
+                <div class="cta-feature-item">
+                    <img src="./public/imagens/medalha.png" alt="">
+                    <h3>Explicações Claras</h3>
+                    <p>Cada reparo é detalhado com transparência</p>
+                </div>
+
+                <div class="cta-feature-item">
+                    <img src="./public/imagens/respeito.png" alt="">
+                    <h3>Respeito Total</h3>
+                    <p>Atendimento que prioriza confiança</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="fixed-icons">
         <div class="icon-circle">
-            <a href="">
+            <a
+                href="https://lista.mercadolivre.com.br/_CustId_1211570453?item_id=MLB3037593505&category_id=MLB193151&seller_id=1211570453&client=recoview-selleritems&recos_listing=true#origin=upp&component=sellerData&typeSeller=classic">
                 <img src="./public/imagens/mercado_livre.png" alt="Mercado Livre">
-            </a>    
+            </a>
         </div>
 
         <div class="icon-circle">
-            <a href="">
+            <a href="https://wa.me/5511972896804">
                 <img src="./public/imagens/whatsapp.png" alt="WhatsApp">
-            </a>    
+            </a>
         </div>
     </div>
+
+    <footer>
+        <div class="overlay-footer"></div>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="logo-footer"> <img src="./public/imagens/logo_pitinin.jpeg" alt="Logo Pitinin"
+                        class="logo-pitinin-footer"> </div>
+                <p style="margin-top: 20px;">A Pitinin Autopeças & Serviços busca oferecer um serviço qualificado para
+                    todo cliente que busca a manuntenção/melhoria do seu carro.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Links Rápidos</h4>
+                <ul>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="loja.html">Nossa Loja</a></li>
+                    <li><a href="sobre.html">Sobre a Pitinin</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contato</h4>
+                <p>R. Alm. Brasil, 570 - Mooca, São Paulo - SP</p>
+                <p>CEP: 03162-010</p><br>
+                <p>Tel: 11972896804</p><br>
+                <p>pitininparts@gmail.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Pitinin. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
