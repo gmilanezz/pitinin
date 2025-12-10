@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Teko", sans-serif, 'Poppins';
+    background: #ffffff;
+    letter-spacing: 0.5px;
+}
+
+.navbar {
+    width: 100%;
+    background: #009688;
+    padding: 12px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav-content {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    width: 110px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+}
+
+.nav-links a {
+    font-family: "Teko", sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.fixed-icons {
+  position: fixed;
+  bottom: 25px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 25px;
+  z-index: 9999;
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+}
+
+.icon-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+footer {
+    background-color: #029686;
+    color: #ffffff;
+    padding: 70px 10%;
+    position: relative;
+    overflow: hidden;
+    font-family: "Instrument Sans", sans-serif;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+/* Estrutura principal */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 60px;
+    margin-bottom: 40px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.footer-section p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+/* Lista de links */
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 12px;
+}
+
+.footer-section ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+/* Logo */
+.logo-footer {
+    justify-content: flex-start;
+    max-width: 70px;
+}
+
+.logo-pitinin-footer {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+.footer-section .logo img:hover {
+    transform: scale(1.05);
+}
+
+/* Linha inferior */
+.footer-bottom {
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+@media (max-width: 900px) {
+    footer {
+        padding: 50px 5%;
+    }
+
+    nav {
+        position: absolute;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+    }
+
+    .footer-section h4 {
+        font-size: 1.1rem;
+    }
+
+    .navbar {
+        gap: 10px;
+    }
+
+    .logo h1 {
+        max-width: 1000px;
+    }
+}
