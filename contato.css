@@ -47,6 +47,73 @@ body {
     font-weight: 500;
 }
 
+.contato {
+  min-height: calc(100vh - 90px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 180px 160px 140px 120px;
+  text-align: center;
+  background-color: #009688;
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+}
+
+.contato h1 {
+  font-size: 2.4rem;
+  margin-bottom: 60px;
+  max-width: 800px;
+  color: #fff;
+  font-style: italic;
+}
+
+.contato-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 50px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.contato-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  font-size: 1.1rem;
+  transition: transform 0.3s;
+}
+
+.contato-item:hover {
+  transform: translateY(-10px);
+}
+
+.contato-item i {
+  font-size: 48px;
+  color: var(--text-light);
+}
+
+.contato-item p {
+  margin: 0;
+  color: var(--text-light);
+  opacity: 0.95;
+}
+
+.contato-item.endereco {
+  align-items: center;
+}
+
+.contato-item.endereco i {
+  margin-bottom: 8px;
+}
+
+.contato-item.endereco div p {
+  margin: -6px 0;
+  font-size: 1.1rem;
+}
 
 .fixed-icons {
   position: fixed;
@@ -190,4 +257,59 @@ footer {
     .logo h1 {
         max-width: 1000px;
     }
+}
+
+@media (max-width: 768px) {
+
+  .nav-toggle {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .navbar.open nav {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    background: #fff;
+    padding: 1.4rem;
+    border-radius: 18px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+
+  .navbar.open nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+
+  .navbar.open nav a {
+    color: var(--brand);
+    font-weight: 600;
+  }
+
+  .contato {
+    padding: 160px 20px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .contato-grid {
+    justify-content: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
 }
