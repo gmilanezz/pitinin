@@ -831,14 +831,21 @@
   }
 
   @media (max-width: 480px) {
-    .faq-title {
-      font-size: 22px;
-    }
 
-    .faq-question {
-      font-size: 16px;
-    }
+  .faq-title {
+    font-size: 22px;
+    text-align: center;
   }
+
+  .faq-question {
+    font-size: 16px;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
 
   footer {
     background-color: #029686;
