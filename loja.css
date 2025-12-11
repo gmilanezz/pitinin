@@ -10,6 +10,59 @@ body {
     letter-spacing: 0.5px;
 }
 
+.nav-toggle {
+    display: none;
+}
+
+#menuBtn {
+    font-size: 34px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .nav-links {
+        display: none !important;
+    }
+
+    .nav-toggle {
+        display: block;
+    }
+}
+
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100vh;
+    background: #009688;
+    padding-top: 100px;
+    transition: .3s ease;
+    z-index: 998;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding-left: 30px;
+}
+
+.mobile-menu a {
+    color: white;
+    font-size: 24px;
+    font-family: "Teko", sans-serif;
+    text-decoration: none;
+}
+
+.mobile-menu.open {
+    right: 0;
+}
+
 .navbar {
     width: 100%;
     background: #009688;
@@ -86,29 +139,29 @@ body {
 }
 
 .produto-link {
-  display: block;
-  text-decoration: none;
-  color: inherit;
-  transition: transform 0.3s ease;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease;
 }
 
 .produto-link:hover {
-  transform: translateY(-8px);
+    transform: translateY(-8px);
 }
 
 .produto-link img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 8px;
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .produto-link h3 {
-  margin: 12px 0 0;
-  font-size: 18px;
-  font-weight: bold;
-  color: #222;
-  text-align: center;
+    margin: 12px 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
 }
 
 .carousel-btn {
@@ -132,69 +185,101 @@ body {
 }
 
 /* Responsivo */
-@media (max-width: 992px) {
+@media (max-width: 1024px) {
     .produto-card {
-        min-width: 33.333%;
-    }
-}
-
-@media (max-width: 768px) {
-    .produto-card {
-        min-width: 50%;
+        min-width: 260px;
+        flex: 0 0 260px;
     }
 
-    /* 2 cards */
     .carousel-btn {
         width: 44px;
         height: 44px;
         font-size: 24px;
     }
+
+    .carousel-btn.prev {
+        left: 10px;
+    }
+
+    .carousel-btn.next {
+        right: 10px;
+    }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    .produtos-section {
+        padding: 100px 15px;
+    }
+
+    .carousel-track {
+        gap: 20px;
+    }
+
     .produto-card {
-        min-width: 80%;
+        min-width: 240px;
+        flex: 0 0 240px;
     }
 
     .carousel-btn {
         width: 40px;
         height: 40px;
-        font-size: 20px;
+        font-size: 22px;
+        background: rgba(255, 255, 255, 0.95);
+        top: 90%;
     }
 
-    .produtos-section h2 {
-        font-size: 26px;
+    .carousel-btn.prev {
+        left: 5px;
     }
 
-    .produtos-section p {
-        font-size: 16px;
+    .carousel-btn.next {
+        right: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-track {
+        gap: 15px;
+    }
+
+    .produto-card {
+        min-width: calc(100vw - 80px);
+        flex: 0 0 calc(100vw - 80px);
+    }
+
+    .carousel-btn {
+        top: 100%
+    }
+
+    .produtos-section h2{
+        margin-top: 40px;
     }
 }
 
 .fixed-icons {
-  position: fixed;
-  bottom: 25px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 0 25px;
-  z-index: 9999;
+    position: fixed;
+    bottom: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 25px;
+    z-index: 9999;
 }
 
 .icon-circle {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  overflow: hidden;
-  cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
 }
 
 .icon-circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
 footer {

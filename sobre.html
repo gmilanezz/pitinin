@@ -10,6 +10,8 @@
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <script src="./public/script.js"></script>
+    <script src="./sobre.js"></script>
 </head>
 
 <body>
@@ -18,18 +20,50 @@
             <a href="./index.html">
                 <img src="./public/imagens/logo_pitinin.jpeg" class="nav-logo" alt="Pitinim">
             </a>
-
+            <div class="nav-toggle">
+                <button id="menuBtn">☰</button>
+            </div>
             <ul class="nav-links">
                 <li><a href="./loja.html">Nossa Loja</a></li>
-                <li><a href="./servico.html">Serviço</a></li>
                 <li><a href="./sobre.html">Sobre Nós</a></li>
-                <li><a
-                        href="https://www.google.com/search?sca_esv=7c6910cd552a3b71&sxsrf=AE3TifPH8Hy27dKWTjpU82q7fTJbHyYHrA:1765133745892&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E_nzMxcLukbWcE-Wt0YnK2WyZdlQxdf2OGV9CH7XYsTl-W9qLxy_aIQGoo4bYvybRR-N6PzgMxEhz2fmGSabC-eeZ85Zo8OS5-8SfJBU9CpzETyckA%3D%3D&q=Pitinin+Auto-Mec%C3%A2nica+Coment%C3%A1rios&sa=X&ved=2ahUKEwjvup7Pk6yRAxUxppUCHZYIKegQ0bkNegQIHhAD&biw=1366&bih=607&dpr=1">Avaliação</a>
-                </li>
+                <li><a href="./index.html#faq">FAQ</a></li>
                 <li><a href="./contato.html">Contato</a></li>
             </ul>
         </div>
     </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="./loja.html">Nossa Loja</a></li>
+            <li><a href="./sobre.html">Sobre Nós</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="./contato.html">Contato</a></li>
+        </ul>
+    </div>
+    <section class="sobre-section">
+        <div class="sobre-container">
+            <img src="./public/imagens/logo_pitinin.jpeg" alt="Logo Pitinin" class="sobre-logo">
+            <h2 class="sobre-title">QUEM É A <span>PITININ?</span></h2>
+            <p class="sobre-text">
+                A Pitinin é uma empresa que presta serviços mecânicos, seja reparos de danos, melhorias, instalação de
+                peças, trocas, tudo para a melhoria do seu carro.
+            </p>
+            <img src="./public/imagens/historia.png" alt="Fundador" class="sobre-img">
+            <h2 class="sobre-title">QUANDO E ONDE <span>FOI FUNDADA?</span></h2>
+            <p class="sobre-text">
+                Foi fundada pelo Ildo Guerreiro, pai do atual proprietário, Pablo Ricardo Guerreiro, em 1979 na Rua
+                Barão de Iguape, 737, bairro da Liberdade, SP.
+            </p>
+            <img src="./public/imagens/fundo_principal.jpg" alt="Oficina" class="sobre-img">
+            <h2 class="sobre-title">E HOJE, ONDE E COMO SE <span>SITUA A PITININ?</span></h2>
+            <p class="sobre-text">
+                Hoje a Pitinin está localizada no bairro da Mooca, na Rua Alameda Brasil, 570, pronta para receber e
+                cuidar do seu carro com o nosso
+                atendimento familiar e sincero!
+            </p>
+            <a href="./servico.html" class="sobre-btn">CONHEÇA OS NOSSOS SERVIÇOS</a>
+
+        </div>
+    </section>
 
     <div class="fixed-icons">
         <div class="icon-circle">
@@ -52,7 +86,8 @@
             <div class="footer-section">
                 <div class="logo-footer"> <img src="./public/imagens/logo_pitinin.jpeg" alt="Logo Pitinin"
                         class="logo-pitinin-footer"> </div>
-                <p style="margin-top: 20px;">A Pitinin Autopeças & Serviços busca oferecer um serviço qualificado para
+                <p style="margin-top: 20px;">A Pitinin Autopeças & Serviços busca oferecer um serviço qualificado
+                    para
                     todo cliente que busca a manuntenção/melhoria do seu carro.</p>
             </div>
             <div class="footer-section">
@@ -61,7 +96,9 @@
                     <li><a href="./index.html"></a>Voltar para a página inicial</li>
                     <li><a href="loja.html">Nossa Loja</a></li>
                     <li><a href="./servicos.html">Serviços</a></li>
-                    <li><a href="./index.html#faq">FAQ</a></li>
+                    <li><a
+                            href="https://www.google.com/search?sca_esv=7c6910cd552a3b71&sxsrf=AE3TifPH8Hy27dKWTjpU82q7fTJbHyYHrA:1765133745892&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E_nzMxcLukbWcE-Wt0YnK2WyZdlQxdf2OGV9CH7XYsTl-W9qLxy_aIQGoo4bYvybRR-N6PzgMxEhz2fmGSabC-eeZ85Zo8OS5-8SfJBU9CpzETyckA%3D%3D&q=Pitinin+Auto-Mec%C3%A2nica+Coment%C3%A1rios&sa=X&ved=2ahUKEwjvup7Pk6yRAxUxppUCHZYIKegQ0bkNegQIHhAD&biw=1366&bih=607&dpr=1">Avaliação</a>
+                    </li>
                     <li><a href="./contato.html">Contato</a></li>
                 </ul>
             </div>
