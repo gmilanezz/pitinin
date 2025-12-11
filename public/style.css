@@ -391,9 +391,9 @@ body {
 }
 
 .services-title {
-  font-size: 38px;
+  font-size: 55px;
   font-weight: 700;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 .services-cards {
@@ -434,8 +434,8 @@ body {
   border-radius: inherit;
   background: radial-gradient(
       circle,
-      rgba(255, 0, 0, 0.8) 0%,
-      rgba(255, 0, 0, 0.5) 40%,
+      rgba(0, 255, 179, 0.8) 0%,
+      rgba(3, 122, 86, 0.5) 40%,
       rgba(255, 0, 0, 0) 70%
   );
   filter: blur(60px);
@@ -473,7 +473,7 @@ body {
   text-decoration: none;
   transition: 0.3s;
   font-weight: 700;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 
 .btn-cta-servico:hover {
@@ -509,7 +509,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(transparent 20%, rgba(0, 0, 0, 0.7) 80%);
+  background: linear-gradient(transparent 20%, rgba(0.9, 0.5, 0.5, 0.9) 90%);
   z-index: 2;
 }
 
