@@ -161,7 +161,7 @@
     }
 
     .carousel-track {
-      animation: slideInfinite 10s linear infinite;
+      animation: slideInfinite 20s linear infinite;
     }
 
     .carousel-track img {
