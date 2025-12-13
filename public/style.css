@@ -132,55 +132,40 @@
 
   .carousel-track {
     display: flex;
-    width: 200%;
-    animation: slideInfinite 100s linear infinite;
+    width: max-content;
+    /* ESSENCIAL */
+    animation: slideInfinite 20s linear infinite;
   }
 
   .carousel-track img {
-    width: calc(100% / 6);
     height: 420px;
     object-fit: cover;
-    object-position: center;
     flex-shrink: 0;
   }
 
-  /* Animação contínua */
+  /* anima só metade do conteúdo */
   @keyframes slideInfinite {
     from {
       transform: translateX(0);
     }
 
     to {
-      transform: translateX(-900%);
+      transform: translateX(-50%);
     }
   }
 
   @media (max-width: 768px) {
     .hero-carousel {
       height: 260px;
+      margin: 10px auto;
     }
 
     .carousel-track {
-      display: flex;
-      width: 1800%;
-      animation: slideInfiniteMobile 154s linear infinite;
+      animation: slideInfinite 10s linear infinite;
     }
 
     .carousel-track img {
       height: 260px;
-      flex-shrink: 0;
-      object-fit: cover;
-      object-position: center;
-    }
-
-    @keyframes slideInfiniteMobile {
-      from {
-        transform: translateX(0);
-      }
-
-      to {
-        transform: translateX(-900%);
-      }
     }
   }
 
